@@ -115,25 +115,6 @@ function Home() {
           </Reveal>
         </section>
 
-        <section className="mx-auto max-w-6xl px-6 pb-28">
-          <Reveal>
-            <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">Core competencies</h2>
-          </Reveal>
-          <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {skillGroups.map((g, i) => (
-              <Reveal key={g.label} delay={i * 0.05}>
-                <p className="text-xs uppercase tracking-[0.2em] text-accent">{g.label}</p>
-                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                  {g.items.map((it) => (
-                    <li key={it} className="transition-colors hover:text-foreground">
-                      {it}
-                    </li>
-                  ))}
-                </ul>
-              </Reveal>
-            ))}
-          </div>
-        </section>
       </PageTransition>
       <Footer />
     </>

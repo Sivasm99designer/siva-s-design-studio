@@ -1,9 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowUpRight } from "lucide-react";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { PageTransition, Reveal } from "@/components/PageTransition";
-import { Thumb } from "@/components/ProjectCard";
+import { ProjectCard } from "@/components/ProjectCard";
 import { projects } from "@/data/site";
 
 export const Route = createFileRoute("/projects")({
@@ -43,42 +42,10 @@ function ProjectsPage() {
         </section>
 
         <section className="mx-auto max-w-6xl px-6 pb-28">
-          <div className="border-t border-border/60">
+          <div className="grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
             {projects.map((p, i) => (
               <Reveal key={p.title} delay={i * 0.04}>
-                <a
-                  href={p.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group grid items-center gap-6 border-b border-border/60 py-8 md:grid-cols-[120px_1fr_auto]"
-                >
-                  <Thumb
-                    label={String(i + 1).padStart(2, "0")}
-                    className="aspect-square w-[120px] transition-transform duration-500 group-hover:scale-[1.04]"
-                  />
-                  <div>
-                    <h2 className="text-2xl font-medium tracking-tight transition-colors group-hover:text-brand sm:text-3xl">
-                      {p.title}
-                    </h2>
-                    <p className="mt-1 text-muted-foreground">{p.subtitle}</p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {p.tags.map((t) => (
-                        <span
-                          key={t}
-                          className="rounded-full border border-border px-2.5 py-0.5 text-xs text-muted-foreground"
-                        >
-                          {t}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4 md:justify-end">
-                    <span className="text-sm text-muted-foreground">{p.year}</span>
-                    <span className="flex size-11 items-center justify-center rounded-full border border-border transition-all duration-300 group-hover:border-brand group-hover:bg-brand group-hover:text-brand-foreground">
-                      <ArrowUpRight className="size-4" />
-                    </span>
-                  </div>
-                </a>
+                <ProjectCard project={p} />
               </Reveal>
             ))}
           </div>
