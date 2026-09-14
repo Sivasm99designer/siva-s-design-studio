@@ -4,7 +4,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { PageTransition, Reveal } from "@/components/PageTransition";
 import { ProjectCard, Thumb } from "@/components/ProjectCard";
-import { projects, stats, skillGroups } from "@/data/site";
+import { projects, stats } from "@/data/site";
 
 export const Route = createFileRoute("/")({
   head: () => ({
