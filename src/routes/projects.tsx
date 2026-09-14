@@ -9,23 +9,23 @@ import { projects } from "@/data/site";
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Projects â€” Siva S M, Product Designer" },
+      { title: "Projects - Siva S M, Product Designer" },
       {
         name: "description",
         content:
           "Case studies by Siva S M: Recon for CMRL, AquaSat, AquaPartner, AquaFarmer, Yaary Auto, Yaary Driver and Yaary Marketing.",
       },
-      { property: "og:title", content: "Projects â€” Siva S M, Product Designer" },
+      { property: "og:title", content: "Projects - Siva S M, Product Designer" },
       {
         property: "og:description",
-        content: "Dashboards, mobility apps and aquaculture platforms â€” full case studies.",
+        content: "Dashboards, mobility apps and aquaculture platforms - full case studies.",
       },
     ],
   }),
-  component: ProjectsÂ,
+  component: ProjectsPage,
 });
 
-function ProjectsÂ() {
+function ProjectsPage() {
   return (
     <>
       <Nav />
