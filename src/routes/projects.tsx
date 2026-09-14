@@ -22,10 +22,10 @@ export const Route = createFileRoute("/projects")({
       },
     ],
   }),
-  component: ProjectsÂ­,
+  component: ProjectsÂ,
 });
 
-function ProjectsÂ­() {
+function ProjectsÂ() {
   return (
     <>
       <Nav />
