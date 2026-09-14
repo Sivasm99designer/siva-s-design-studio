@@ -86,7 +86,7 @@ function Home() {
 
         <section className="mx-auto max-w-6xl px-6 pb-24">
           <Reveal>
-            <div className="flex items-end justify-between border-b border-border/60 pb-6">
+            <div className="flex items-end justify-between pb-6">
               <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">Featured work</h2>
               <Link to="/projects" className="text-sm text-muted-foreground hover:text-brand">
                 All projects →
@@ -104,15 +104,30 @@ function Home() {
 
         <section className="mx-auto max-w-6xl px-6 pb-24">
           <Reveal>
-            <div className="grid gap-6 rounded-3xl bg-surface p-10 sm:grid-cols-2 lg:grid-cols-4">
-              {stats.map((s) => (
-                <div key={s.label}>
-                  <p className="text-4xl font-semibold tracking-tight text-brand">{s.value}</p>
-                  <p className="mt-2 text-sm text-muted-foreground">{s.label}</p>
-                </div>
-              ))}
+            <div className="flex flex-col gap-4 pb-6 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-sm text-muted-foreground">At a glance</p>
+                <h2 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
+                  By the numbers
+                </h2>
+              </div>
+              <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
+                Four years of shipping product design across dashboards, mobile apps and design systems.
+              </p>
             </div>
           </Reveal>
+          <div className="mt-8 grid gap-px overflow-hidden rounded-3xl border border-border/60 bg-border/60 sm:grid-cols-2 lg:grid-cols-4">
+            {stats.map((s, i) => (
+              <Reveal key={s.label} delay={i * 0.06}>
+                <div className="group flex h-full flex-col justify-between bg-background p-8 transition-colors duration-300 hover:bg-surface">
+                  <p className="text-5xl font-semibold tracking-tight text-brand transition-transform duration-300 group-hover:-translate-y-1 sm:text-6xl">
+                    {s.value}
+                  </p>
+                  <p className="mt-6 text-sm text-muted-foreground">{s.label}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </section>
 
       </PageTransition>

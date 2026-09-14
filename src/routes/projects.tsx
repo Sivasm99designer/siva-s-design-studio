@@ -42,7 +42,7 @@ function ProjectsPage() {
         </section>
 
         <section className="mx-auto max-w-6xl px-6 pb-28">
-          <div className="grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-x-8 gap-y-14 sm:grid-cols-2">
             {projects.map((p, i) => (
               <Reveal key={p.title} delay={i * 0.04}>
                 <ProjectCard project={p} />
