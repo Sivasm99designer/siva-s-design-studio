@@ -87,7 +87,7 @@ function About() {
 
         <section className="mx-auto max-w-6xl px-6 pb-24">
           <Reveal>
-            <h2 className="border-b border-border/60 pb-6 text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h2 className="pb-6 text-3xl font-semibold tracking-tight sm:text-4xl">
               Experience
             </h2>
           </Reveal>
@@ -117,7 +117,7 @@ function About() {
 
         <section className="mx-auto max-w-6xl px-6 pb-24">
           <Reveal>
-            <h2 className="border-b border-border/60 pb-6 text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h2 className="pb-6 text-3xl font-semibold tracking-tight sm:text-4xl">
               Skills & tools
             </h2>
           </Reveal>
@@ -143,7 +143,7 @@ function About() {
         <section className="mx-auto max-w-6xl px-6 pb-24">
           <div className="grid gap-12 md:grid-cols-2">
             <Reveal>
-              <h2 className="border-b border-border/60 pb-6 text-2xl font-semibold tracking-tight">
+              <h2 className="pb-6 text-2xl font-semibold tracking-tight">
                 Education
               </h2>
               <div className="mt-8 space-y-8">
@@ -158,7 +158,7 @@ function About() {
               </div>
             </Reveal>
             <Reveal delay={0.08}>
-              <h2 className="border-b border-border/60 pb-6 text-2xl font-semibold tracking-tight">
+              <h2 className="pb-6 text-2xl font-semibold tracking-tight">
                 Certifications
               </h2>
               <div className="mt-8 space-y-8">
@@ -177,7 +177,7 @@ function About() {
 
         <section className="mx-auto max-w-6xl px-6 pb-28">
           <Reveal>
-            <h2 className="border-b border-border/60 pb-6 text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h2 className="pb-6 text-3xl font-semibold tracking-tight sm:text-4xl">
               Working philosophy
             </h2>
           </Reveal>

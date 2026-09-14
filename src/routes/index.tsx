@@ -86,7 +86,7 @@ function Home() {
 
         <section className="mx-auto max-w-6xl px-6 pb-24">
           <Reveal>
-            <div className="flex items-end justify-between border-b border-border/60 pb-6">
+            <div className="flex items-end justify-between pb-6">
               <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">Featured work</h2>
               <Link to="/projects" className="text-sm text-muted-foreground hover:text-brand">
                 All projects →
@@ -104,7 +104,7 @@ function Home() {
 
         <section className="mx-auto max-w-6xl px-6 pb-24">
           <Reveal>
-            <div className="flex flex-col gap-4 border-b border-border/60 pb-6 sm:flex-row sm:items-end sm:justify-between">
+            <div className="flex flex-col gap-4 pb-6 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="text-sm text-muted-foreground">At a glance</p>
                 <h2 className="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
